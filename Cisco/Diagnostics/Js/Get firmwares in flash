@@ -1,0 +1,16 @@
+function convertString(inputString) {
+    var parts = inputString.split(",");
+    var resultString = parts.join("\n");
+    return resultString;
+}
+
+function diagnose(cli, device, diagnostic) {
+	cli.macro("enable");
+	var flash = cli.command("dir")
+// You might need to adjust the regex since it's looking for 9200,2960 and C1000 firmware
+	var regex = /.*(c2960x-universalk9-mz|c1000-universalk9-mz|cat9k_lite_iosxe).*/gm
+
+	var output
+	output = String((flash).match(regex));
+	diagnostic.set(convertString(output));
+}
