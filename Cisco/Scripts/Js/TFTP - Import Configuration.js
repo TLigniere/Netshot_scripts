@@ -18,6 +18,7 @@ function run(cli, device) {
     cli.macro("configure")
     cli.command('file prompt quiet')
     cli.command("do wr")
+      // The script was made by thinking that you had a specific directory to pick configuration files from
     cli.command(`do copy tftp://${TFTPAddress}/Configuration_files/${NewConfiguration} startup-config`);
     cli.command("do reload", {
         mode: {
