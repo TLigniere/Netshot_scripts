@@ -13,7 +13,6 @@ const Input = {
 
 
 function run(cli, device) {
-    // Apply commands to upgrade and wait for 
     const { TFTPAddress, NewConfiguration } = cli.userInputs;
     
     cli.macro("configure")
