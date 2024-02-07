@@ -51,5 +51,3 @@ function run(cli, device) {
 
     
     cli.command("do wr");
-
-}
