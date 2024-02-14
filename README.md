@@ -1,3 +1,3 @@
 # NetShot_scripts
 This repository aims to be a place where anyone can put their NetShot scripts / Compliance / Diagnostic to avoid inventing the wheel everytime Netshot is set up in a network infrastructure.
-Feel free to add any type of scripts that you think they could help someone
+Feel free to add any type of scripts that you find useful
