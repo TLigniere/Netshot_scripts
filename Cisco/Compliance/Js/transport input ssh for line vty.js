@@ -5,7 +5,7 @@ function check(device) {
     Section_OBJ = device.findSections(`${config}`, `${regex}`)
     Section_STR =  (JSON.stringify(Section_OBJ));
 
-    if (Section_STR.includes(`${descripton_of_int}`)){
+    if (Section_STR.includes(`${value}`)){
         return CONFORMING
     }
     else {
