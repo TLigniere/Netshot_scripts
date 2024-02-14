@@ -9,7 +9,7 @@ function check(device) {
     result = Section_STR.match(snd_regex)
   
     if (result==null){
-      return NONCONFORMING
+      return CONFORMING
     }
   
     min = Number(result.match(/\d+/))
